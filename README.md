@@ -1,7 +1,40 @@
-# dile-modal WORK IN PROGRESS!!
+# dile-modal
 
 This is a Web Component to implement a modal box, based on LitElement.
 
+# Use
+
+Install it from npm:
+
+```
+npm i dile-modal
+```
+
+Place the script In your HTML page or your bundle and use the dile-modal tag:
+
+```
+<dile-modal id="myModal">
+  <p>
+    Lorem, ipsum dolor sit...
+  </p>
+</dile-modal> 
+```
+
+What you place inside the modal box is the content displayed when the modal opens.
+
+## Properties
+
+- **opened**: Bolean property used to change the modal state, false is closed / true means open.
+- **showCloseIcon**: Boolean property to tell the modal box you want a close icon to be displayed.
+
+## Methods
+
+- **open**: Use it to open the modal box
+- **close**: Use it to close the modal box
+
+## Events
+
+- **dile-modal-closed**: Dispatched when the modal box becomes closed, in case you are called the close() method, or clicked in the background modal, or by the close icon.
 
 ## Style customization
 
