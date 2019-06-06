@@ -1,7 +1,7 @@
 {
   "name": "dile-modal",
   "version": "1.0.1",
-  "description": "",
+  "description": "Web Component modal box",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,5 +14,11 @@
   "license": "MIT",
   "dependencies": {
     "lit-element": "^2.1.0"
-  }
+  },
+  "keywords": [
+    "webcomponents",
+    "javascript",
+    "litelement",
+    "modal box"
+  ]
 }
