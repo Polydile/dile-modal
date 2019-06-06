@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Modal box demo!!</title>
   <style>
   body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -12,11 +12,34 @@
   h1 {
     font-weight: 300;
   }
+  p {
+    margin-top: 0;
+  }
+  #myModal2 {
+    --dile-modal-height: 300px;
+  }
+  #myModalCustomized {
+    --dile-modal-border-radius: 0;
+    --dile-modal-content-background-color: #303030;
+    --dile-modal-width: 200px;
+    --dile-modal-min-width: 100px;
+    text-align: center;
+    --dile-modal-content-shadow-color: #ddd;
+    --dile-modal-background-color: #fff;
+  }
+  #myModalCustomized p {
+    color: #f66;
+    font-size: 0.9em;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+  }
   </style>
 </head>
 <body>
   <h1>Modal Demo</h1>
   <button id="openbutton">Open a modal box</button>
+  <button id="openbutton2">Open a modal box with large content, fixed height and close icon</button>
+  <button id="openbutton3">Open a modal box customized</button>
   
   <dile-modal id="myModal">
     <p>
@@ -24,11 +47,42 @@
     </p>
   </dile-modal> 
 
+  <dile-modal id="myModal2" showcloseicon>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum omnis deserunt, eius ratione quia quaerat odit. Quae ab esse minima alias sit. Totam dolor rem illo molestias sunt ducimus eos?
+    </p>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+    </ul>
+    <p>Quo nihil quidem earum magnam libero tempore voluptatum animi? Ad commodi delectus sequi, beatae, eaque inventore porro nesciunt quae sint sunt rerum eveniet ducimus. Repellat ullam atque minus perspiciatis a.</p>
+    <p>Ipsam voluptatibus voluptas dolorem, ea doloribus quasi neque voluptates nostrum ab sunt nobis perspiciatis impedit voluptatum. Sunt nam earum modi officia culpa facilis repellendus, ducimus obcaecati similique possimus totam corporis.</p>
+  </dile-modal> 
+
+  <dile-modal id="myModalCustomized">
+    <p>This action is not permited! #JOKE</p>
+    <button id="acceptButon">Accept!</button>
+  </dile-modal> 
+
   <script src="../dile-modal.js" type="module"></script>
   <script>
   let modalElement = document.getElementById('myModal');
   document.getElementById('openbutton').addEventListener('click', () => {
     modalElement.open();
+  });
+  let modalElement2 = document.getElementById('myModal2');
+  document.getElementById('openbutton2').addEventListener('click', () => {
+    modalElement2.open();
+  });
+  let modalElement3 = document.getElementById('myModalCustomized');
+  document.getElementById('openbutton3').addEventListener('click', () => {
+    modalElement3.open();
+  });
+  document.getElementById('acceptButon').addEventListener('click', () => {
+    modalElement3.close();
   });
   </script>
 </body>
