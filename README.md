@@ -10,7 +10,7 @@ Install it from npm:
 npm i dile-modal
 ```
 
-Place the script In your HTML page or your bundle and use the dile-modal tag:
+Place the script In your HTML page or include the dile-modal.js file in your JS bundle. After that you can use the dile-modal tag, like this:
 
 ```
 <dile-modal id="myModal">
@@ -20,7 +20,7 @@ Place the script In your HTML page or your bundle and use the dile-modal tag:
 </dile-modal> 
 ```
 
-What you place inside the modal box is the content displayed when the modal opens.
+Whatever you place inside the modal box tag is the content displayed when the modal opens.
 
 ## Properties
 
