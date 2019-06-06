@@ -1,0 +1,18 @@
+{
+  "name": "dile-modal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Polydile/dile-modal.git"
+  },
+  "author": "Miguel Angel Alvarez",
+  "license": "MIT",
+  "dependencies": {
+    "lit-element": "^2.1.0"
+  }
+}

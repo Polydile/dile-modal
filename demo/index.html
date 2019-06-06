@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  h1 {
+    font-weight: 300;
+  }
+  </style>
+</head>
+<body>
+  <h1>Modal Demo</h1>
+  <button id="openbutton">Open a modal box</button>
+  
+  <dile-modal id="myModal">
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum omnis deserunt, eius ratione quia quaerat odit. Quae ab esse minima alias sit. Totam dolor rem illo molestias sunt ducimus eos?
+    </p>
+  </dile-modal> 
+
+  <script src="../dile-modal.js" type="module"></script>
+  <script>
+  let modalElement = document.getElementById('myModal');
+  document.getElementById('openbutton').addEventListener('click', () => {
+    modalElement.open();
+  });
+  </script>
+</body>
+</html>
