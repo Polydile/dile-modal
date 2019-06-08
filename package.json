@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "site:build": "npm run storybook:build",
     "storybook": "start-storybook -p 9001",
-    "storybook:build": "build-storybook -o _site -s storybook-static"
+    "storybook:build": "build-storybook -o docs -s storybook-static"
   },
   "repository": {
     "type": "git",
