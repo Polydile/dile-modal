@@ -4,7 +4,10 @@
   "description": "Web Component modal box",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "site:build": "npm run storybook:build",
+    "storybook": "start-storybook -p 9001",
+    "storybook:build": "build-storybook -o _site -s storybook-static"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,8 @@
     "javascript",
     "litelement",
     "modal box"
-  ]
+  ],
+  "devDependencies": {
+    "@open-wc/demoing-storybook": "^0.2.0"
+  }
 }
