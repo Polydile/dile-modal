@@ -2,6 +2,8 @@
 
 This is a Web Component to implement a modal box, based on LitElement.
 
+[Go to demos page](https://polydile.github.io/dile-modal/)
+
 # Use
 
 Install it from npm:
