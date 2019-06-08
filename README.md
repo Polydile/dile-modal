@@ -22,7 +22,7 @@ Place the script In your HTML page or include the dile-modal.js file in your JS 
 </dile-modal> 
 ```
 
-Whatever you place inside the modal box tag is the content displayed when the modal opens.
+Whatever you place inside the ```<dile-modal>``` tag will be the content displayed when the modal box opens.
 
 ## Properties
 
