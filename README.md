@@ -37,6 +37,7 @@ Whatever you place inside the ```<dile-modal>``` tag will be the content display
 ## Events
 
 - **dile-modal-closed**: Dispatched when the modal box becomes closed, in case you are called the close() method, or clicked in the background modal, or by the close icon.
+- **dile-modal-background-closed**: Dispatched when the modal box is closed because the user clicks in the background layer.
 
 ## Style customization
 

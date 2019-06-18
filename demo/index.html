@@ -73,7 +73,13 @@
   document.getElementById('openbutton').addEventListener('click', () => {
     modalElement.open();
   });
+  modalElement.addEventListener('dile-modal-background-closed', () => {
+    console.log('background layer clicked');
+  });
   let modalElement2 = document.getElementById('myModal2');
+  modalElement2.addEventListener('dile-modal-background-closed', () => {
+    console.log('background layer clicked modal 2');
+  });
   document.getElementById('openbutton2').addEventListener('click', () => {
     modalElement2.open();
   });
