@@ -76,6 +76,7 @@ storiesOf('dile-modal', module)
         text-align: center;
         --dile-modal-content-shadow-color: #ddd;
         --dile-modal-background-color: #fff;
+        --dile-modal-animation-duration: 1s;
       }
       #myModalCustomized p {
         color: #f66;
@@ -84,6 +85,7 @@ storiesOf('dile-modal', module)
         text-transform: uppercase;
       }
       </style>
+      <h1>Customized modal box</h1>
       <button @click="${() => document.getElementById('myModalCustomized').open()}">Open customized Modal</button>
       <dile-modal id="myModalCustomized">
         <p>This action is not permited! #JOKE</p>

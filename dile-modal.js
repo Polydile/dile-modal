@@ -38,8 +38,8 @@ export class DileModal extends LitElement {
         height: 100vh;
         width: 100vw;
         display: none;
-        transition: opacity 0.3s ease-in;
-        -webkit-transition: opacity 0.3s ease-in;
+        transition: opacity var(--dile-modal-animation-duration, 0.3s) ease-in;
+        -webkit-transition: opacity var(--dile-modal-animation-duration, 0.3s) ease-in;
         align-items: center;
         justify-content: center;
         z-index: var(--dile-modal-z-index, 100);     
@@ -138,7 +138,7 @@ export class DileModal extends LitElement {
     this._toChange = true;
     setTimeout(() => {
       this._toChange = false;
-    }, 1);
+    }, 50);
   }
 
   _backgroundModalClick(e) {

@@ -61,3 +61,4 @@ Custom property | Description | Default
 --dile-modal-content-shadow-color | Content layer shadow color | #000
 --dile-modal-close-icon-color | Close icon color | #888
 --dile-modal-close-icon-size | Close icon size | 24px
+--dile-modal-animation-duration | Duration of the opacity modal animation | 0.3s
