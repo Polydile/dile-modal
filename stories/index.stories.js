@@ -108,7 +108,7 @@ storiesOf('dile-modal', module)
   .add(
     'Blocking modal box',
     () => html`
-      <p>This modal box uses "blocker" property as true. So, the interface blocks the screen, that is, you can not close it by clicking the background layer.</p>
+      <p>This modal box uses "blocking" property as true. So, the interface blocks the screen, that is, you can not close it by clicking the background layer.</p>
       <p>For closing this modal box you should call the regular method "close()" of the element. Obviusly, the element trigger (ie. button, link...) should be inside the modal box content.</p>
       <button @click="${() => document.getElementById('myBlockerModal').open()}">Open Modal</button>
       <dile-modal blocking id="myBlockerModal">
