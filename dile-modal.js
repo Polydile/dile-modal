@@ -13,6 +13,10 @@ export class DileModal extends LitElement {
        * If true the modal box displays a close icon
        */
       showCloseIcon: { type: Boolean },
+      /**
+       * If true the modal box blocks the screen. That is, when you click in the background layer, the modal box do not close.
+       */
+      blocking: { type: Boolean },
     }
   }
 
@@ -21,6 +25,7 @@ export class DileModal extends LitElement {
     this._toChange = false;
     this.opened = false;
     this.showCloseIcon = false;
+    this.blocking = false;
   }
   
   static get styles() { 
@@ -142,13 +147,15 @@ export class DileModal extends LitElement {
   }
 
   _backgroundModalClick(e) {
-    this.close()
-    this.dispatchEvent(new CustomEvent('dile-modal-background-closed', {
-      bubbles: true,
-      composed: true,
-      detail: this
-    }));
-    e.stopPropagation();
+    if(! this.blocking) {
+      this.close()
+      this.dispatchEvent(new CustomEvent('dile-modal-background-closed', {
+        bubbles: true,
+        composed: true,
+        detail: this
+      }));
+      e.stopPropagation();
+    }
   }
 
   close() {
