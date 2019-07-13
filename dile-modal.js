@@ -98,7 +98,7 @@ export class DileModal extends LitElement {
         fill: transparent;
       }
       .contentIconSeparation {
-        padding-top: var(--dile-modal-close-icon-size, 24px);
+        padding-top: 10px;
       }
     `;
   }

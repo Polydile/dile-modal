@@ -43,7 +43,7 @@ storiesOf('dile-modal', module)
         }
       </style>
       <button @click="${() => document.getElementById('myModal2').open()}">Open Modal With close icon</button>
-      <dile-modal showcloseicon id="myModal2">
+      <dile-modal showcloseicon id="myModal2" opened>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum omnis deserunt, eius ratione quia quaerat odit. Quae ab esse minima alias sit. Totam dolor rem illo molestias sunt ducimus eos?
         </p>
