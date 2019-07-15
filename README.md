@@ -28,7 +28,7 @@ Whatever you place inside the ```<dile-modal>``` tag will be the content display
 
 - **opened**: Bolean property used to change the modal state, false is closed / true means open.
 - **showCloseIcon**: Boolean property to tell the modal box you want a close icon to be displayed.
-- **blocker**: Boolean property to configure the modal box as a bloking interface. If true the modal box blocks the screen. That is, when you click in the background layer, the modal box do not close.
+- **blocking**: Boolean property to configure the modal box as a bloking interface. If true the modal box blocks the screen. That is, when you click in the background layer, the modal box do not close.
 
 ## Methods
 
