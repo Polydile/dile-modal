@@ -82,8 +82,8 @@ export class DileModal extends LitElement {
       }
       span{
         position: absolute;
-        top: 5px;
-        right: 18px;
+        top: var(--dile-modal-close-icon-top, 5px);
+        right: var(--dile-modal-close-icon-right, 18px);
         z-index: 1002; 
       }
       span svg {

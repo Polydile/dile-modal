@@ -63,3 +63,5 @@ Custom property | Description | Default
 --dile-modal-close-icon-color | Close icon color | #888
 --dile-modal-close-icon-size | Close icon size | 24px
 --dile-modal-animation-duration | Duration of the opacity modal animation | 0.3s
+--dile-modal-close-icon-top | Top position applied to the close icon | 5px
+--dile-modal-close-icon-right | Right position applied to the close icon | 18px
