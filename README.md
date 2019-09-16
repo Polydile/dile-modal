@@ -24,6 +24,14 @@ Place the script In your HTML page or include the dile-modal.js file in your JS 
 
 Whatever you place inside the ```<dile-modal>``` tag will be the content displayed when the modal box opens.
 
+When needed, you may use the ```open()``` method to open the modal box interface, and ```close()``` to close it. 
+
+```
+document.getElementById("myModal").open();
+```
+
+Other posibility in order to open or close the modal box is to set the boolean ```opened``` attribute.
+
 ## Properties
 
 - **opened**: Bolean property used to change the modal state, false is closed / true means open.
