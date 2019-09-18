@@ -84,12 +84,10 @@ export class DileModal extends LitElement {
       }
       span{
         position: absolute;
+        display: inline-block;
         top: var(--dile-modal-close-icon-top, 5px);
         right: var(--dile-modal-close-icon-right, 18px);
         z-index: 1002; 
-      }
-      span {
-        display: inline-block;
         width: var(--dile-modal-close-icon-size, 24px);
         height: var(--dile-modal-close-icon-size, 24px);
         cursor: pointer;
