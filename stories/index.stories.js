@@ -123,3 +123,45 @@ storiesOf('dile-modal', module)
     }
   )
 
+  .add(
+    'Customizing the close icon',
+    () => html`
+      <style>
+        dile-modal {
+          --dile-modal-background-color: rgba(130,230,230, 0.8);
+          --dile-modal-border-radius: 0px;
+          --dile-modal-close-icon-size: 36px;
+          --dile-modal-close-icon-top: 5px;
+          --dile-modal-close-icon-right: 5px;
+          --dile-modal-close-icon-color: #f44;
+          --dile-modal-content-shadow-color: #eee;
+          --dile-modal-content-shadow-displacement: 1px;
+        }
+        p {
+          margin-top: 20px;
+        }
+        div.accept {
+          display: inline-block;
+          padding: 10px;
+          background-color: #58f;
+          color: #fff;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      </style>
+      <button @click="${() => document.getElementById('myModal5').open()}">Open Modal With close icon</button>
+      <dile-modal showcloseicon id="myModal5" opened>
+        <p>
+          This customized Modal Box has a big red close icon!
+        </p>
+        <div class="accept" @click=${ () => {
+          let modal = document.getElementById('myModal5');
+          modal.close();
+        }}>
+          Accept
+        </div>
+      </dile-modal>
+    `, {
+      notes: { markdown: readme },
+    }
+  )

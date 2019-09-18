@@ -50,7 +50,7 @@ Other posibility in order to open or close the modal box is to set the boolean `
 
 ## Style customization
 
-You can customize the modal box interface it using the CSS custom properties bellow.
+You can customize the modal box interface by using the CSS custom properties bellow.
 
 Custom property | Description | Default
 ----------------|-------------|---------
