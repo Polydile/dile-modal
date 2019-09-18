@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
+import { closeIcon, closeIconCss } from 'dile-close-icon-template';
 
 export class DileModal extends LitElement {
 
@@ -29,12 +30,13 @@ export class DileModal extends LitElement {
   }
   
   static get styles() { 
-    return css`
+    return [ closeIconCss, css`
       * {
         box-sizing: border-box;
       }
       :host {
         display: block;
+        --dile-close-icon-template-color: var(--dile-modal-close-icon-color, #888);
       }
       section {
         position: fixed;
@@ -86,21 +88,16 @@ export class DileModal extends LitElement {
         right: var(--dile-modal-close-icon-right, 18px);
         z-index: 1002; 
       }
-      span svg {
+      span {
+        display: inline-block;
         width: var(--dile-modal-close-icon-size, 24px);
         height: var(--dile-modal-close-icon-size, 24px);
         cursor: pointer;
       }
-      span path {
-        fill: var(--dile-modal-close-icon-color, #888);
-      }
-      span path[fill="none"] {
-        fill: transparent;
-      }
       .contentIconSeparation {
         padding-top: 10px;
       }
-    `;
+    `];
   }
 
   render() {
@@ -108,7 +105,7 @@ export class DileModal extends LitElement {
       <section class="${this.getModalClass(this.opened, this._toChange)}" @click="${this._backgroundModalClick}" @transitionend="${this.animationEnd}">
         <div class="content" @click="${this.contentClick}">
           ${ this.showCloseIcon 
-            ? html`<span @click="${this.close}">${this.closeIcon}</span>`
+            ? html`<span @click="${this.close}">${closeIcon}</span>`
             : ''
           }
           <article class="${ this.showCloseIcon ? 'contentIconSeparation' : '' }">
@@ -117,10 +114,6 @@ export class DileModal extends LitElement {
         </div>
       </section>
     `;
-  }
-
-  get closeIcon() {
-    return html`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/></svg>`;
   }
 
   getModalClass(opened, _toChange) {

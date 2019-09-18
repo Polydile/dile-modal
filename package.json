@@ -16,6 +16,7 @@
   "author": "Miguel Angel Alvarez",
   "license": "MIT",
   "dependencies": {
+    "dile-close-icon-template": "^1.0.4",
     "lit-element": "^2.2.0"
   },
   "keywords": [
