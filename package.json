@@ -1,8 +1,8 @@
 {
   "name": "dile-modal",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Web Component to implement a modal box",
-  "main": "index.js",
+  "main": "dile-modal.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "site:build": "npm run storybook:build",
