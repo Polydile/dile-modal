@@ -69,6 +69,8 @@ export class DileModal extends LitElement {
       }
       article {
         overflow: auto;
+        max-height: 100%;
+        height: 100%;
         padding-right: var(--dile-modal-content-padding, 1em);
       }
       .transparent {
