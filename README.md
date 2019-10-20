@@ -61,6 +61,7 @@ Custom property | Description | Default
 --dile-modal-min-width | Content layer min width | 250px
 --dile-modal-max-width | Content layer max width | 100vw
 --dile-modal-height | Conten layer height | auto
+--dile-modal-min-height | Content layer max height | auto
 --dile-modal-max-height | Content layer max height | 100vh
 --dile-modal-content-background-color | Content layer background color | #fff
 --dile-modal-content-padding | Content layer padding | 1em

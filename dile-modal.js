@@ -60,6 +60,7 @@ export class DileModal extends LitElement {
         min-width: var(--dile-modal-min-width, 250px);      
         max-width: var(--dile-modal-max-width, 100vw);
         height: var(--dile-modal-height, auto);
+        min-height: var(--dile-modal-min-height, auto);
         max-height: var(--dile-modal-max-height, 100vh);
         background-color: var(--dile-modal-content-background-color, #fff);
         box-shadow: var(--dile-modal-content-shadow-displacement, 6px) var(--dile-modal-content-shadow-displacement, 6px) var(--dile-modal-content-shadow-blur, 16px) var(--dile-modal-content-shadow-color, #000);
