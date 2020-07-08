@@ -1,6 +1,6 @@
 {
   "name": "dile-modal",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Web Component to implement a modal box",
   "main": "dile-modal.js",
   "scripts": {

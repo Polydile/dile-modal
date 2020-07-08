@@ -1,3 +1,7 @@
+# Moved
+
+**This package has moved** and is now available at [@dile/dile-modal](https://github.com/Polydile/dile-components). Please update your dependencies. This repository is no longer maintained.
+
 # dile-modal
 
 This is a Web Component to implement a modal box, based on LitElement.
